@@ -9,7 +9,7 @@ void setup() {
 void loop() {
   if (digitalRead(SWITCH) == LOW) {
     state = !state;
-    delay(300);  // debounce delay: wait for the switch contacts to settle before reading again
+    delay(100);  // debounce delay: wait for the switch contacts to settle before reading again
   }
 
   if (state) {
